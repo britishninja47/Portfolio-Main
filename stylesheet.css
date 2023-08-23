@@ -1,13 +1,13 @@
 * {
   margin: 0;
-
   box-sizing: border-box;
-  font-family: Adventure;
+
 }
 
 body {
   color: #ededed;
   background-color: #2d025f;
+
 }
 
 .header {
@@ -25,6 +25,8 @@ body {
 
 .logo {
   position: relative;
+  font-family: SF Pro Rounded;
+  font-weight: 600;
   font-size: 25px;
   color: #fff;
   text-decoration: none;
@@ -37,6 +39,7 @@ body {
 .navbar a {
   display: inline-block;
   font-size: 25px;
+  font-family: SF Pro Rounded;
   color: #fff;
   font-weight: 500;
   margin-left: 35px;
@@ -79,7 +82,7 @@ body {
 .home-content h3 {
   font-size: 32px;
   font-weight: 700;
-  font-family: Didot;
+  font-family: SF UI Display;
   opacity: 0;
   animation: slideBottom 1s ease forwards;
   animation-delay: .7s;
@@ -87,6 +90,7 @@ body {
 
 .home-content h3 span {
   color: #f4d76e;
+
 }
 
 .home-content h3:nth-of-type(2) {
@@ -96,9 +100,10 @@ body {
 }
 
 .home-content h1 {
-  font-family: Adventure;
-  font-size: 56px;
-  font-weight: 700;
+  font-family: League Spartan;
+  font-size: 75px;
+  color: #f4d76e;
+  font-weight: 500;
   margin: -3px;
   opacity: 0;
   animation: slideRight 5s ease forwards;
@@ -107,7 +112,7 @@ body {
 
 .home-content p {
   font-size: 20px;
-  font-family: Didot;
+  font-family: SF UI Display;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
@@ -144,12 +149,12 @@ body {
   padding: 12px 28px;
   background: #f4d76e;
   border-radius: 40px;
-  font-size: 16px;
+  font-size: 30px;
   color: #081b29;
   letter-spacing: 1px;
   text-decoration: none;
-  font-weight: 600;
-  font-family: Adventure;
+  font-weight: 800;
+  font-family: SF Pro Rounded;
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
@@ -181,7 +186,7 @@ body {
 .about-text h2
 {
   font-size: 60px;
-
+  font-family: SF Pro Display;
 }
 .about-text h2 span
 {
@@ -190,7 +195,7 @@ body {
 .about-text h4
 {
   font-size: 29px;
-  font-family: Didot;
+  font-family: Roboto;
   font-weight:600;
   color: #fff;
   line-height: 1.7;
@@ -198,11 +203,13 @@ body {
 }
 .about-text p
 {
-  font-family: Didot;
+  font-family: SF UI Display;
+  font-weight: 270;
+  letter-spacing: normal;
   color: aliceblue;
   font-size: 20px;
-  line-height: 1.4;
-  margin-bottom: 4rem;
+  line-height: 1.6;
+  margin-bottom: 5rem;
 }
 
 #services
@@ -214,12 +221,7 @@ body {
 }
 .sub-title
 {
-  text-align: center;
-  font-size: 60px;
-  padding-bottom: 70px;
-}
-.sub-title
-{
+  font-family: SF Pro Display;
   text-align: center;
   font-size: 60px;
   padding-bottom: 70px;
@@ -258,6 +260,7 @@ body {
 }
 .services-list div h2
 {
+  font-family: SF Pro Display;
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
@@ -273,19 +276,31 @@ body {
 .read
 {
   display: inline-block;
-  padding: 12px, 28px;
+  padding: 12px 28px;
   background: #f4d76e;
   border-radius: 40px;
   font-size: 16px;
   color: #081b29;
   letter-spacing: 1px;
   text-decoration: none;
-  font-weight: 600;
+  font-family: SF Pro Rounded;
+  font-weight: 900;
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
   box-shadow: 0 0 5px #f4d76e, 0 0 25px #f4d76e
 }
+.read:hover
+{
+  box-shadow: 0 0 5px #f4d76e,
+    0 0 25px #f4d76e, 0 0 50px #f4d76e,
+    0 0 100px #f4d76e, 0 0 200px #f4d76e
+}
+.services-list div:hover
+{
+  transform: translateY(-40px);
+}
+
 
 
 
