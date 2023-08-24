@@ -168,7 +168,8 @@ body {
 }
 .about
 {
-  display: grid;
+  display: flex;
+  justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
@@ -205,6 +206,7 @@ body {
 {
   font-family: SF UI Display;
   font-weight: 270;
+  word-spacing:60%;
   letter-spacing: normal;
   color: aliceblue;
   font-size: 20px;
@@ -300,6 +302,200 @@ body {
 {
   transform: translateY(-40px);
 }
+
+/*section
+{
+  display: flex;
+  flex-wrap: wrap;
+}*/
+
+.container1
+{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills h2{
+  font-family: SF UI Display;
+  font-size: 17px;
+  font-weight: 500px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  animation: showText 1.5s 1s linear forwards;
+  opacity: 0;
+
+}
+.progress-bar{
+  background: #57535c;
+  width: 700px;
+  height:10px;
+  border-radius: 5px;
+}
+.progress-bar div{
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+
+}
+.progress-bar div span{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #2D025F;
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.html{
+  background-color: #c95d2e;
+  animation: html 1s linear forwards;
+}
+.css{
+  background-color: #147bbc;
+  animation: css 1s linear forwards;
+}
+.javascript{
+  background-color: #b0bc1e;
+  animation: javascript 1s linear forwards;
+}
+.react{
+  background-color: #5ed4f3;
+  animation: react 1s linear forwards;
+}
+.ruby{
+  background-color: #C60000;
+  animation: ruby 1s linear forwards;
+}
+
+.html span{
+  border:1px solid #c95d2e;
+}
+.css span{
+  border:1px solid #147bbc;
+}
+.javascript span{
+  border:1px solid #b0bc1e;
+}
+.react span{
+  border:1px solid #5ed4f3;
+}
+.ruby span{
+  border:1px solid #C60000;
+}
+@keyframes html{
+  100%{
+    width: 92%;
+  }
+}
+@keyframes css{
+  100%{
+    width: 90%;
+  }
+}
+@keyframes javascript{
+  100%{
+    width: 80%;
+  }
+}
+@keyframes react{
+  100%{
+    width: 60%;
+  }
+}
+@keyframes ruby{
+  100%{
+    width: 65%;
+  }
+}
+
+
+@keyframes showText{
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.container2{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.container2 .card{
+  position: relative;
+  width: 220px;
+  height:250px;
+  background-color: #f4d76e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container2 .card .percent{
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.container2 .card .percent svg{
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heading1
+{
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
