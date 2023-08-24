@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="stylesheet.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
-  <link rel="styles" href="style.css">
+
 </head>
 <body>
   <header class="header">
@@ -17,14 +17,14 @@
 
 
      <nav class="navbar">
-      <a href="#" style="--i:1"class="active">Home</a>
-      <a href="#" style="--i:2">About</a>
-      <a href="#" style="--i:3">Skill</a>
-      <a href="#" style="--i:4">Projects</a>
-      <a href="#" style="--i:5">Contact</a>
+      <a href="#home" style="--i:1"class="active">Home</a>
+      <a href="#about" style="--i:2">About</a>
+      <a href="#services" style="--i:3">Skill</a>
+      <a href="#project" style="--i:4">Projects</a>
+      <a href="#contact" style="--i:5">Contact</a>
     </nav>
   </header>
-  <section class="home">
+  <section class="home" id="home">
     <div class="MainPic">
     <img src="images/Screenshot_2023-08-22_at_14_31_22-transformed.png" alt="#" width="800" height="600">
     </div>
@@ -35,18 +35,18 @@
       <p>Iv'e been a Junior Developer for 2 years now!</p>
 
       <div class="home-sci">
-        <a href="#" style="--i:7"><i class='bx bxl-linkedin'></i></a>
-        <a href="#" style="--i:8"><i class='bx bxl-github'></i></a>
-        <a href="#" style="--i:9"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.linkedin.com/in/jeremiah-harriott/" style="--i:7"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/britishninja47" style="--i:8"><i class='bx bxl-github'></i></a>
+        <a href="https://www.instagram.com/britishboy_47/" style="--i:9"><i class='bx bxl-instagram'></i></a>
       </div>
-      <a href="#" class="btn-box">Who Am I?</a>
+      <a href="#contact" class="btn-box">Lets Connect?</a>
       </div>
   </section>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
   <script>
     var typed = new Typed(".text", {
-      strings: ["Web Developer", "Web Designer", "Game Developer"],
+      strings: ["Web Designer", "Web Developer", "Game Developer"],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 1000,
@@ -56,7 +56,7 @@
 
    <section class="about" id="about">
     <div class="about-img">
-     <img src="" alt="">
+     <img src="images/Coverart.png" alt="">
     </div>
       <div class="about-text">
         <h2>About <span>Me</span></h2>
@@ -83,25 +83,39 @@
           <div>
             <i class='bx bx-code-alt' style='color:#f4d76e' ></i>
             <h2>Front-End Development</h2>
-            <a href="#" class="read">Learn More</a>
+            <p>Web Design</p>
+            <p>User Experience</p>
+            <p>Testing and Debugging</p>
+            <p>Responsive Design</p>
+
+
           </div>
 
           <div>
             <i class='bx bxs-data' style='color:#f4d76e' ></i>
             <h2>Back-End Development</h2>
-            <a href="#" class="read">Learn More</a>
+            <p>APIs and Web Services</p>
+            <p>Authentication and Security</p>
+            <p>Backend Languages and Frameworks</p>
+
           </div>
 
           <div>
             <i class='bx bxs-palette' style='color:#f4d76e'></i>
             <h2>UI/UX Design</h2>
-            <a href="#" class="read">Learn More</a>
+            <p>Visual Design</p>
+            <p>Design Mockups</p>
+
           </div>
 
           <div>
             <i class='bx bxs-joystick' style='color:#f4d76e' ></i>
             <h2>Video Game Development</h2>
-            <a href="#" class="read">Learn More</a>
+            <p>Game Engines (Unity)</p>
+            <p> Gameplay Mechanics</p>
+            <p>Storytelling and Narrative Design</p>
+            <p>Testing and Debugging</p>
+
           </div>
 
         </div>
@@ -135,6 +149,10 @@
           <h2>Ruby</h2><i class='bx bx-diamond' style='color:#C60000' ></i>
           <div class="progress-bar">
              <div class="ruby"><span>65%</span></div>
+          </div>
+          <h2>Unity</h2><i class='bx bxl-unity' style='color:#F3FBFA' ></i>
+          <div class="progress-bar">
+             <div class="unity"><span>20%</span></div>
           </div>
         </div>
       </div>
@@ -283,6 +301,7 @@
               <div class="layer">
                 <h5>Logo Design (Figma)</h5>
                 <a href=""></a>
+              </div></a>
               </div>
             </div>
           </div>
@@ -297,19 +316,35 @@
       <div class="contact-text">
         <h2>Contact <span>Me</span></h2>
         <h4>Lets Connect</h4>
-        <p>Send me a message so we can get started on your dream app!</p>
+        <p>Send me a message so we can get started on your dream app! NO IDEA IS TOO SMALL!
+        </p>
         <div class="contact-list">
           <li><i class='bx bx-envelope' style='color:#f4d76e' ></i>Harriott_47@hotmail.com</li>
           <li><i class='bx bx-phone-call' style='color:#f4d76e' ></i>647-853-9942</li>
         </div>
-        <div class="conatct-icons">
-         <a href=""><i class='bx bxl-linkedin-square' style='color:#f4d76e'  ></i></a>
-         <a href=""><i class='bx bxl-instagram' style='color:#f4d76e'  ></i></a>
-         <a href=""><i class='bx bxl-github' style='color:#f4d76e'  ></i></a>
+        <div class="contact-icons">
+         <a href="https://www.linkedin.com/in/jeremiah-harriott/"><i class='bx bxl-linkedin-square' ></i></a>
+         <a href="https://www.instagram.com/britishboy_47/"><i class='bx bxl-instagram'  ></i></a>
+         <a href="https://github.com/britishninja47"><i class='bx bxl-github'   ></i></a>
         </div>
+      </div>
+
+
+
+
+      <div class="contact-form">
+        <form action="https://formsubmit.co/ea4b2be5e6aaf5f0201d6d0d6ce6c525" method="POST">
+          <input type="" placeholder="Enter Your Name Here" required>
+          <input type="email" placeholder="Enter Your Email Here" required>
+
+          <input type="" placeholder="Enter Subject">
+          <textarea name="" id="" cols="40" rows="10" placeholder="Enter Message Here" required></textarea>
+            <input type="submit" value="submit">
+        </form>
       </div>
      </section>
 
+     <a href="#home" class="Top"><i class='bx bx-up-arrow-alt'></i></a>
 
-</body>
+    </body>
 </html>
