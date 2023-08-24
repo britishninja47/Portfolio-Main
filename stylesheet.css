@@ -223,7 +223,7 @@ body {
 }
 .sub-title
 {
-  font-family: SF Pro Display;
+  font-family: SF UI Display;
   text-align: center;
   font-size: 60px;
   padding-bottom: 70px;
@@ -303,11 +303,16 @@ body {
   transform: translateY(-40px);
 }
 
-/*section
-{
-  display: flex;
-  flex-wrap: wrap;
-}*/
+.sub-title2 {
+  font-family: SF UI Display;
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+}
+
+.sub-title2 span{
+  color: #f4d76e;
+}
 
 .container1
 {
@@ -315,10 +320,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 15px;
 }
 .skills h2{
   font-family: SF UI Display;
-  font-size: 17px;
+  font-size: 25px;
   font-weight: 500px;
   margin-top: 40px;
   margin-bottom: 5px;
@@ -400,7 +406,7 @@ body {
 }
 @keyframes javascript{
   100%{
-    width: 80%;
+    width: 74%;
   }
 }
 @keyframes react{
@@ -434,7 +440,7 @@ body {
   position: relative;
   width: 220px;
   height:250px;
-  background-color: #f4d76e;
+  background-color: #2d025f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -443,16 +449,111 @@ body {
   position: relative;
   width: 150px;
   height: 150px;
+
+
 }
 .container2 .card .percent svg{
   position: relative;
   width: 150px;
   height: 150px;
+  transform: rotate(270deg);
+}
+.container2 .card .percent svg circle{
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 2;
+  stroke: #191919;
+  transform: translate(5px,5px);
+}
+.container2 .card .percent svg circle:nth-child(2)
+{
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+
+
 }
 
 
 
+.dot{
+  position: absolute;
+  inset: 5px;
+  z-index: 10;
 
+  animation: animateDot 2s linear forwards;
+}
+@keyframes animateDot{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(calc(3.6deg * var(--num)));
+  }
+}
+
+
+.dot::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--clr);
+  box-shadow: 0 0 10px var(--clr),
+  0 0 30px var(--clr);
+}
+.number
+{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2.5s;
+}
+
+.number h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.2em;
+}
+.number h2 span{
+  font-weight: 300;
+  color: #fff;
+  font-size: 0.5em;
+}
+.number p{
+  font-weight: 700;
+  font-family: SF Pro Display;
+  font-size: 55%;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  color: #f4d76e;
+}
 
 
 
